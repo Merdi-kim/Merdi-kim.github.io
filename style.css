@@ -1,0 +1,286 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css?family=Sofia|Trirong");
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-snap-align: start;
+}
+
+.container {
+    background-color: black;
+    height: 100vh
+}
+
+header {
+    position: relative;
+    text-align: center;
+    height: inherit;
+    background: url('https://directlinedev.com/media/portfolio/background/background_143_7c0pGaZ.desktop.jpeg') no-repeat ;
+    background-size: cover;
+}
+
+.navBar {
+    display: inline-block;
+    background: khaki;
+}
+.links {
+    text-align: left;
+    list-style:none ;
+    color: black;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: "Sofia";
+}
+
+.links li {
+    display: inline;
+    padding:1rem;
+    font-size: 1rem;
+}
+
+.links li:hover{
+    text-decoration: underline;
+    color: rgb(247, 72, 59);
+}
+
+h2 {
+    color: rgb(253, 251, 251);
+}
+
+
+/******banner******/
+.banner {
+    color: white;
+}
+
+#description {
+    padding: 9rem;
+    position: relative;
+    
+}
+
+
+#description h1 {
+    font-size: 5rem;
+}
+h1 span {
+    color: khaki;
+    font-size: 6rem;
+}
+
+#description p {
+    font-size: 1.8rem;
+}
+
+.social_links span {
+    font-size: 1.5rem;
+    margin: 0.7rem;
+}
+
+.arrow-down {
+    position: absolute;
+    font-size: 3rem;
+    color: turquoise;
+    bottom: 8%;
+    left: 48%;
+}
+
+.arrow-down:hover {
+    color: khaki;
+}
+
+
+
+/****************About me **********************/
+
+#about {
+    height: 100vh;
+    background-color: rgb(32, 32, 31);
+    color: rgb(156, 154, 150);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 20%;
+    padding: 4rem 9rem 0 9rem;
+}
+
+.profile {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:1;
+    grid-row-end: 5;
+
+}
+
+.about {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start:1;
+    grid-row-end: 4;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.about p {
+    font-family: "Trirong";
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.resume {
+    position: absolute;
+    background: rgb(44, 44, 44);
+    padding: 1rem;
+    top: 90%;
+    left: 45%;
+    color: rgb(255, 231, 196);
+}
+
+.education {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    text-align: center;
+    padding-top: 4rem;
+    color: rgb(156, 154, 150);
+}
+
+.school {
+    font-size: 1rem;
+    color: rgb(223, 220, 215);
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/***********work********************/
+.skills section{
+    transform: skew(0deg, -5deg);
+    
+}
+
+
+#work {
+
+    background-color: rgb(7, 7, 7);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+#proficiency {
+    font-family: "Trirong";
+    color: rgb(129, 129, 131);
+    font-size: 1.5rem;
+}
+
+
+
+.frontend, .backend, .tools {
+    display: inline-block;
+    height: 15rem;
+    width: 12rem;
+    text-align: start;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-top: 6rem;
+    margin-right: 3rem;
+    color: khaki;
+    border-radius: 10px;
+    background: #070707;
+    box-shadow:  2px 2px 4px #bebebe,
+             -2px -2px 4px #ffffff;
+}
+
+
+.tools h3, .backend h3, .frontend h3 {
+    text-align: center;
+}
+
+
+/********************work*******************/
+
+.work {
+    margin-top: 3rem;
+    color: rgb(241, 210, 210);
+    background: rgb(32, 31, 31);
+    padding: 1rem;
+}
+
+.work section {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    column-gap: 20px;
+}
+
+.work img {
+    height: inherit;
+    width: 25rem;
+}
+
+
+/*******************Footer*******************/
+#contact {
+    background: url("https://www.vandolph.co.za/vandolphsa/wp-content/uploads/2018/09/contact-us-background-2.jpg");
+    color: #636363;
+    text-align: center;
+    height: 100vh;
+ } 
+
+ ::placeholder {
+    color: black;
+ }
+
+#contact-title {
+    font-size: 30px;
+    color: white;
+} 
+
+
+ /* contact form */
+ #contact form { 
+     margin-top:7rem;
+ }
+ #contact input,
+ #contact textarea {
+    padding: 18px;
+    color:khaki;
+    background: #8a8989;
+    margin-bottom: 20px;
+    border: 0;
+    font-size: 15px;
+    width: 40%;
+ }
+ #contact input:focus,
+ #contact textarea:focus,
+ #contact select:focus {
+     color: #fff;
+     background-color: #6b7070;
+ }
+ .submit {
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    display: inline-block;
+    border-radius: 3px;
+    text-transform: uppercase;
+	letter-spacing: 3px;
+	color:#fff;
+    background: #03b7ee;
+    padding: 1rem;
+ }
+
+ 
